@@ -8,7 +8,6 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "@react-native-community/checkbox": "^0.5.7",
     "@react-native-community/masked-view": "0.1.10",
     "expo": "~40.0.0",
     "expo-app-loading": "^1.0.1",
@@ -18,6 +17,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-40.0.1.tar.gz",
+    "react-native-bouncy-checkbox": "^1.0.8",
     "react-native-dynamic-vector-icons": "^1.1.4",
     "react-native-gesture-handler": "~1.8.0",
     "react-native-paper": "^4.7.2",

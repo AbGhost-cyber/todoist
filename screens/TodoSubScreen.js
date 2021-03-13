@@ -14,7 +14,6 @@ import FontsMapper from "../constants/FontsMapper";
 import TodoItem from "../components/TodoItem";
 
 const TodoSubScreen = (props) => {
-  
   let isAllCat = false;
   const category = props.navigation.getParam(navMapper.CATEGORY);
   const allTodos = useSelector((state) => state.todos.todos);
@@ -34,9 +33,6 @@ const TodoSubScreen = (props) => {
     [isAllCat]
   );
   const todosLength = getCatTodoLength(category.title);
-  const renderItem = (title) => {
-    return <TodoItem title={title} />;
-  };
 
   return (
     <View style={styles.screen}>
@@ -50,7 +46,13 @@ const TodoSubScreen = (props) => {
       <BottomSheetLike>
         <FlatList
           data={isAllCat ? allTodos : categoryTodo}
-          renderItem={(itemData) => <TodoItem title={itemData.item.title} />}
+          renderItem={(itemData) => (
+            <TodoItem
+              title={itemData.item.title}
+              description={itemData.item.description}
+              isCompleted={itemData.item.isCompleted}
+            />
+          )}
         />
       </BottomSheetLike>
       <FabButton style={{ margin: 20 }} />
