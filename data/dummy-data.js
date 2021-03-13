@@ -2,13 +2,13 @@ import Todo from "../model/todo";
 import TodoCategory from "../model/todoCategory";
 
 export const TodoCategorys = [
-  new TodoCategory("t1", "All", "calendar-outline", [], "blue"),
+  new TodoCategory("t1", "All", "calendar-outline", [], "#440a67"),
   new TodoCategory("t2", "Work", "briefcase-outline", [], "orange"),
   new TodoCategory("t3", "Music", "headset-outline", [], "purple"),
   new TodoCategory("t4", "Travel", "paper-plane-outline", [], "green"),
   new TodoCategory("t5", "Study", "book-outline", [], "#2a5a77"),
   new TodoCategory("t6", "Home", "bed-outline", [], "red"),
-  new TodoCategory("t7", "Shop", "fast-food-outline", [], "pink"),
+  new TodoCategory("t7", "Shop", "cart-outline", [], "pink"),
   new TodoCategory("t8", "Leisure", "color-palette-outline", [], "cyan"),
 ];
 
@@ -46,7 +46,7 @@ export const TODOS = [
     false
   ),
   new Todo(
-    "m4",
+    "m5",
     "Study for tomorrow's exams",
     "Chemistry exams, damn",
     "Study",
@@ -54,7 +54,7 @@ export const TODOS = [
     true
   ),
   new Todo(
-    "m5",
+    "m6",
     "Go for intern job",
     "i need a job so bad:)))",
     "Work",
@@ -62,7 +62,7 @@ export const TODOS = [
     false
   ),
   new Todo(
-    "m6",
+    "m7",
     "Play Football with cousins ",
     "i love them so much ",
     "Leisure",

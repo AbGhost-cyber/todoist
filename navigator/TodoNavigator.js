@@ -11,9 +11,14 @@ const TodoScreenNavigator = createStackNavigator(
     CreateTodo: CreateTodoScreen,
   },
   {
-    // defaultNavigationOptions: {
-    //   headerTransparent: true,
-    // },
+    defaultNavigationOptions: {
+      headerBackTitleVisible: false,
+      headerTintColor: "white",
+      headerLeftContainerStyle: {
+        margin: 10,
+        
+      },
+    },
   }
 );
 

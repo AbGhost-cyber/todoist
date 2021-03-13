@@ -1,5 +1,7 @@
+import { TODOS } from "../../data/dummy-data";
+
 export const initialState = {
-  todos: [],
+  todos: TODOS,
 };
 
 export default (state = initialState, action) => {
