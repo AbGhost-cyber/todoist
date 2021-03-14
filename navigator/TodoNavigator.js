@@ -3,6 +3,7 @@ import { createAppContainer } from "react-navigation";
 import TodoCategoryScreen from "../screens/TodoCategoryScreen";
 import TodoSubScreen from "../screens/TodoSubScreen";
 import CreateTodoScreen from "../screens/CreateTodoScreen";
+import FontsMapper from "../constants/FontsMapper";
 
 const TodoScreenNavigator = createStackNavigator(
   {
@@ -16,7 +17,10 @@ const TodoScreenNavigator = createStackNavigator(
       headerTintColor: "white",
       headerLeftContainerStyle: {
         margin: 10,
-        
+      },
+      headerTitleStyle: {
+        fontFamily: FontsMapper.PRO_SANS_BOLD,
+        color: "black",
       },
     },
   }

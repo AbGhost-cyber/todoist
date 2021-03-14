@@ -11,7 +11,7 @@ const FabButton = (props) => {
       big
       icon="plus"
       color="white"
-      onPress={() => console.log("pressed")}
+      onPress={props.onPress}
     />
   );
 };

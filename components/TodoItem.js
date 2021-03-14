@@ -15,7 +15,7 @@ const TodoItem = (props) => {
   return (
     <TouchableOpacity activeOpacity={0.9} onPress={handlePress}>
       <View style={styles.parent}>
-        <View style={styles.container}>
+        <View>
           <View
             style={{ flexDirection: "row", justifyContent: "space-between" }}
           >

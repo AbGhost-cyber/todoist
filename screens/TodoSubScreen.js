@@ -12,6 +12,7 @@ import CircleButton from "../components/CircleButton";
 import navMapper from "../constants/navigatorItemsMapper";
 import FontsMapper from "../constants/FontsMapper";
 import TodoItem from "../components/TodoItem";
+import Screens from "../constants/Screens";
 
 const TodoSubScreen = (props) => {
   let isAllCat = false;
@@ -55,7 +56,12 @@ const TodoSubScreen = (props) => {
           )}
         />
       </BottomSheetLike>
-      <FabButton style={{ margin: 20 }} />
+      <FabButton
+        style={{ margin: 20 }}
+        onPress={() => {
+          props.navigation.navigate({ routeName: Screens.CREATE_TODO_SCREEN });
+        }}
+      />
     </View>
   );
 };
